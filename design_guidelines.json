@@ -1,0 +1,170 @@
+{
+  "brand_identity": {
+    "name": "Lumina",
+    "tagline": "Safety Intelligence for Everyone",
+    "archetype": "The Guardian (Protective, Intelligent, Community-Driven)",
+    "emotional_tone": "Trustworthy, Vigilant, Clear, Empowering"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Chivo, sans-serif",
+      "body": "Public Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "import_url": "https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Public+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+    "usage_rules": {
+      "headings": "Use Chivo for all H1-H6. Weight 900 for Hero, 700 for Section Headers. Tracking-tight.",
+      "body": "Use Public Sans for all paragraphs and UI text. High legibility.",
+      "labels": "Uppercase, tracking-widest, text-xs, font-bold (Public Sans)."
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#0F172A",
+        "foreground": "#F8FAFC"
+      },
+      "secondary": {
+        "DEFAULT": "#F1F5F9",
+        "foreground": "#0F172A"
+      },
+      "accent": {
+        "DEFAULT": "#6366F1",
+        "foreground": "#FFFFFF"
+      },
+      "safety_signals": {
+        "safe": "#10B981",
+        "caution": "#F59E0B",
+        "danger": "#EF4444",
+        "verified": "#3B82F6"
+      }
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "lumina": {
+          "900": "#0F172A",
+          "800": "#1E293B",
+          "100": "#F1F5F9",
+          "50": "#F8FAFC"
+        },
+        "safety": {
+          "safe": "#10B981",
+          "warning": "#F59E0B",
+          "danger": "#EF4444",
+          "neutral": "#64748B"
+        }
+      }
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "overlay": "bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-white/20 shadow-lg",
+      "usage": "Map floating panels, mobile navigation, toast notifications"
+    },
+    "gradients": {
+      "hero_glow": "bg-gradient-to-tr from-indigo-500/20 via-purple-500/10 to-transparent",
+      "safety_zone": "radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0) 70%)"
+    },
+    "borders": {
+      "default": "border-slate-200 dark:border-slate-800",
+      "active": "border-indigo-500 ring-2 ring-indigo-500/20"
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "type": "Bento Grid",
+      "grid_cols": "grid-cols-1 md:grid-cols-12",
+      "gap": "gap-6 md:gap-8",
+      "sections": {
+        "hero": "col-span-full h-[80vh] flex items-center justify-center relative overflow-hidden",
+        "feature_map": "col-span-12 md:col-span-8 row-span-2 bg-slate-900 text-white p-8 rounded-3xl",
+        "feature_stat": "col-span-6 md:col-span-4 bg-indigo-50 p-8 rounded-3xl",
+        "feature_community": "col-span-6 md:col-span-4 bg-white border border-slate-200 p-8 rounded-3xl"
+      }
+    },
+    "app_interface": {
+      "type": "Full Screen Map",
+      "structure": "Absolute positioning for UI elements over the map layer.",
+      "z_index": {
+        "map": "z-0",
+        "overlays": "z-10",
+        "modals": "z-50"
+      }
+    },
+    "dashboard": {
+      "type": "High Density Grid",
+      "grid_cols": "grid-cols-1 md:grid-cols-4",
+      "gap": "gap-4",
+      "card_style": "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-3 font-bold tracking-wide shadow-lg hover:shadow-indigo-500/25 transition-all hover:-translate-y-0.5",
+      "secondary": "rounded-full px-6 py-3 border border-slate-200 hover:bg-slate-50 transition-colors",
+      "icon": "rounded-full p-3 bg-white/90 backdrop-blur shadow-md hover:bg-white transition-colors"
+    },
+    "cards": {
+      "feature": "group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 transition-all hover:shadow-xl hover:border-indigo-500/50",
+      "metric": "rounded-xl border border-slate-100 bg-white p-6 shadow-sm"
+    },
+    "inputs": {
+      "search": "h-12 rounded-full border-slate-200 bg-white/90 backdrop-blur px-6 shadow-sm focus:ring-2 focus:ring-indigo-500"
+    }
+  },
+  "image_assets": {
+    "hero_bg": {
+      "url": "https://images.unsplash.com/photo-1762900076151-265900a47a8e?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Cyclist riding safely at night",
+      "usage": "Hero section background with heavy dark overlay"
+    },
+    "community_feature": {
+      "url": "https://images.unsplash.com/photo-1758275557470-008d0c65f2c6?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Diverse community group",
+      "usage": "Community reporting section"
+    },
+    "dashboard_preview": {
+      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Analytics dashboard",
+      "usage": "NGO/City dashboard feature card"
+    },
+    "infrastructure": {
+      "url": "https://images.unsplash.com/photo-1758792621133-fc8b26743ac5?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "City infrastructure at night",
+      "usage": "City planning section"
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "preferred_icons": {
+      "safety": "ShieldCheck",
+      "danger": "AlertTriangle",
+      "map": "Map",
+      "community": "Users",
+      "report": "Megaphone",
+      "settings": "Settings",
+      "menu": "Menu",
+      "close": "X"
+    }
+  },
+  "accessibility_rules": {
+    "contrast": "Ensure all text on map overlays has a bg-opacity of at least 90% or a backdrop-blur.",
+    "focus": "All interactive elements must have visible focus rings (ring-2 ring-indigo-500).",
+    "aria": "Map markers must have aria-labels describing the safety status."
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add the Google Fonts import to index.css immediately.",
+    "2. CONFIGURE TAILWIND: Update tailwind.config.js with the 'lumina' and 'safety' color extensions.",
+    "3. LANDING PAGE: Build the landing page using the Bento Grid layout. Use the 'hero_bg' image with a dark overlay.",
+    "4. MAP INTERFACE: Create a 'MapLayout' component. The map should be full screen. Controls (Search, Filter, Report) should be floating glass panels.",
+    "5. DASHBOARD: Use the 'High Density Grid' for the NGO/City dashboard. Use Recharts for data visualization.",
+    "6. COMPONENTS: Customize existing Shadcn components. Radius should be '0.75rem' (rounded-xl) generally, but '9999px' (rounded-full) for buttons.",
+    "7. THEME: Implement a ThemeProvider. Default to 'light' for Landing, but allow 'dark' toggle. Map might need a specific 'Night Mode' toggle independent of the app theme."
+  ],
+  "universal_guidelines": [
+    "Do not use generic gradients.",
+    "Use 'sonner' for all notifications.",
+    "Ensure all buttons have micro-interactions (hover lift, scale).",
+    "Use 'data-testid' for all interactive elements."
+  ]
+}
